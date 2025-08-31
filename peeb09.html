@@ -9,6 +9,7 @@
 <body>
     <!-- table tag block tag -->
     <!-- ตารางที่แต่ละแถวมีจำนวนคอลัมน์เท่ากัน -->
+    <h1>ตารางที่แต่ละแถวมีจำนวนคอลัมน์เท่ากัน</h1>
      <table border="1px" width="600">
         <tr>
             <td>1</td>
@@ -46,9 +47,58 @@
             <td>5</td>
         </tr>
     </table>
+    <br>
+    <h1>ตารางที่แต่ละแถวมีจำนวนคอลัมน์ไม่เท่ากัน</h1>
     <!-- ตารางที่แต่ละแถวมีจำนวนคอลัมน์ไม่เท่ากัน -->
-     <table>
+     <table border="1px" width="500">
+       <tr>
+        <td rowspan="2">a</td>
+        <td>b</td>
+        <td>c</td>
+        <td>d</td>
+       </tr>
+       <tr>
+        <td colspan="2">e</td>
+        <td rowspan="2">f</td>
+       </tr>
+       <tr>
+        <td>g</td>
+        <td>h</td>
+        <td>i</td>
+        <td colspan="3">j</td>
+       </tr>
+       <tr>
         
+       </tr>
+       <tr>
+        <td colspan="3">o</td>
+       </tr>
+       <tr>
+        <td colspan="2">p</td>
+       </tr>
+     </table>
+     <br>
+     <h1>Workshop table ครั้งที่ 1</h1>
+     <table border="1px" width="1000" height="300" style="text-align: center;">
+        <tr style="background-color: yellow;">
+            <td rowspan="2" colspan="2">a</td>
+            <td>b</td>
+            <td>c</td>
+            <td rowspan="2">d</td>
+        </tr>
+        <tr style="background-color: blue;">
+            <td colspan="2">e</td>
+        </tr>
+        <tr style="background-color: yellowgreen;">
+            <td rowspan="2">f</td>
+            <td colspan="3">g</td>
+            <td>h</td>
+        </tr>
+        <tr style="background-color: purple;">
+            <td>i</td>
+            <td>j</td>
+            <td colspan="2">k</td>
+        </tr>
      </table>
 </body>
 </html>
